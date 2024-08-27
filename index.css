@@ -1,0 +1,29 @@
+.service-item {
+    position: relative;
+}
+
+.popup-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover .popup-content {
+    display: block; /* Show on hover */
+}
+
+.bg{
+    background-image: linear-gradient(to right, #74c5e2, #738df3);
+}
+.bg1{
+    background-image: linear-gradient(to right, #74c5e2, #ed81e9);
+}
+.bg2{
+    background-image: linear-gradient(to right, #0cb7dd, #26eca2);
+}
