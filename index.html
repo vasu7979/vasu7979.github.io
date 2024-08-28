@@ -40,20 +40,22 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
+  <header id="header" class="header d-flex align-items-center">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
 
-        <h1 class="sitename">NS_Brochures</h1>
+        <!-- <h1 class="sitename">NS_Brochures</h1> -->
+        <img src="assets/img/logo.jpeg" class="w-[300px] " alt="">
+
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#about" >About Us</a></li>
+          <li><a href="#services" class="">Services</a></li>
+          <li><a href="#contact" class="">Contact Us</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -260,7 +262,7 @@
                 <h1 class="font-bold w-[35%]">WIFI</h1>
                 <p class="font-bold w-[65%]">: Yes</p>
               </div>
-              <h4 class="mt-4 text-center"><a href="" class="stretched-link ">Product Advanges</a></h4>
+              <h4 class="mt-4 text-center">Product Advanges</h4>
               <ul>
                 <div class="flex gap-1"><i class="bi bi-check2-circle text-blue-900"></i> <span
                     class="text-[14px] font-bold">Stable and
@@ -281,8 +283,11 @@
                     class="text-[14px] font-bold">Affordable and
                     tailored for small and medium business</span></div>
               </ul>
+              <div class="flex justify-center items-center mt-3">
+                <button  class="open-popup text-white text-[18px] bg-[#263759] px-[30px] py-[10px] rounded-[4px]">Get Qyote</button>
             </div>
-
+            </div>
+           
           </div>
 
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
@@ -329,7 +334,7 @@
                 <h1 class="font-bold w-[35%]">WIFI</h1>
                 <p class="font-bold w-[65%]">: Yes</p>
               </div>
-              <h4 class="mt-[4vh] text-center"><a href="" class="stretched-link text-center">Product Advanges</a></h4>
+              <h4 class="2xl:mt-[4vh] mt-[5vh] text-center">Product Advanges</h4>
 
               <ul>
                 <div class="flex gap-1"><i class="bi bi-check2-circle text-blue-900"></i> <span
@@ -351,7 +356,11 @@
                     class="text-[14px] font-bold">Affordable and
                     tailored for small and medium business</span></div>
               </ul>
+              <div class="flex justify-center items-center mt-3">
+                <button  class="open-popup text-white text-[18px] bg-[#263759] px-[30px] py-[10px] rounded-[4px]">Get Qyote</button>
             </div>
+            </div>
+           
           </div>
 
           <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
@@ -402,7 +411,7 @@
                 <h1 class="font-bold w-[35%]">WIFI</h1>
                 <p class="font-bold w-[65%]">: Yes</p>
               </div>
-              <h4 class="mt-4 text-center"><a href="" class="stretched-link text-center">Product Advanges</a></h4>
+              <h4 class="mt-4 text-center">Product Advanges</h4>
 
               <ul>
                 <div class="flex gap-1"><i class="bi bi-check2-circle text-blue-900"></i> <span
@@ -424,7 +433,13 @@
                     class="text-[14px] font-bold">Affordable and
                     tailored for small and medium business</span></div>
               </ul>
+              <div class="flex justify-center items-center mt-3">
+                <button  class="open-popup text-white text-[18px] bg-[#263759] px-[30px] py-[10px] rounded-[4px]">Get Qyote</button>
             </div>
+        
+           
+            </div>
+            
           </div>
 
 
@@ -434,9 +449,47 @@
       </div>
 
     </section>
+     <!-- Popup container -->
+             <div id="popup" class=" fixed inset-0  flex justify-center items-center bg-gray-800 bg-opacity-75 hidden">
+              <div class="bg-white p-6 rounded-lg w-[100%] max-w-md">
+                <div class="flex justify-end cursor-pointer" id="closePopup">
+                  <img src="assets/img/crossicon.png" class="w-3 h-3 " alt="">
+
+                </div>
+                  <h2 class="text-[28px] font-semibold text-gray-800 mb-4 text-center">Contact Form</h2>
+                 
+                  <!-- Contact form -->
+                  <div class="row gy-4">
+
+                    <div class="col-md-12">
+                      <label for="name-field" class="font-bold">Your Name</label>
+                      <input type="text" name="name" id="name-field" class="form-control" required="">
+                    </div>
+    
+                    <div class="col-md-12">
+                      <label for="email-field" class="font-bold">Your Email</label>
+                      <input type="email" class="form-control" name="email" id="email-field" required="">
+                    </div>
+    
+                    <div class="col-md-12">
+                      <label for="subject-field" class="font-bold">Email</label>
+                      <input type="text" class="form-control" name="email" id="subject-field" required="">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="subject-field" class="font-bold">Mobile Number</label>
+                      <input type="text" class="form-control" name="number" id="subject-field" required="">
+                    </div>
+                   <div class="flex items-center justify-center">
+                    <button type="submit" class="bg-[#263759] text-white px-4 py-2 rounded">Submit</button>
+
+                   </div>
+
+                  </div>
+              </div>
+          </div>
 
     <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title " data-aos="fade-up">
         <h2>Contact</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div>
@@ -538,46 +591,46 @@
 
   </main>
 
-  <footer id="footer" class="footer">
-    </div>
-    <div class="container footer-top">
+  <footer id="footer" class="footer bg-[#394968]">
+    <div class="container footer-top" data-aos="fade-up">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">NS_Brochures</span>
+            <span class=" text-white">NS_Brochures</span>
           </a>
-          <div class="footer-contact pt-3">
+          <div class="footer-contact pt-3 text-white">
             <p>A108 Adam Street</p>
             <p>New York, NY 535022</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
         </div>
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+        <div class="col-lg-2 col-md-3 footer-links text-white">
+          <h4 class="text-white">Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="#" class="text-white">Home</a></li>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="#about" class="text-white">About us</a></li>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="#services" class="text-white">Services</a></li>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="#contact" class="text-white">Contact</a></li>
+          </ul>
+        
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links text-white">
+          <h4 class="text-white">Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="#services" class="text-white">NS ASPIRE</a></li>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="#services" class="text-white">NS PRO 2</a></li>
+            <li><i class="bi bi-chevron-right text-white"></i> <a href="#services" class="text-white">NS ELITE A</a></li>
           </ul>
         </div>
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">NS ASPIRE</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">NS PRO 2</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">NS ELITE A</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
+        <div class="col-lg-4 col-md-12 text-white">
+          <h4 class="text-white">Follow Us</h4>
           <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-          <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+          <div class="social-links d-flex text-white" >
+            <a href="" class="text-white"><i class="bi bi-twitter-x text-white"></i></a>
+            <a href="" class="text-white"><i class="bi bi-facebook text-white"></i></a>
+            <a href="" class="text-white"><i class="bi bi-instagram text-white"></i></a>
+            <a href="" class="text-white"><i class="bi bi-linkedin text-white"></i></a>
           </div>
         </div>
       </div>
@@ -601,6 +654,54 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <!-- <script>
+    const openPopupBtn = document.getElementById('openPopup');
+    const closePopupBtn = document.getElementById('closePopup');
+    const popup = document.getElementById('popup');
+
+    openPopupBtn.addEventListener('click', () => {
+        popup.classList.remove('hidden');
+    });
+
+    closePopupBtn.addEventListener('click', () => {
+        popup.classList.add('hidden');
+    });
+</script> -->
+
+<!-- <script>
+  const openPopupBtns = document.querySelectorAll('.open-popup');
+  const closePopupBtn = document.getElementById('closePopup');
+  const popup = document.getElementById('popup');
+
+  openPopupBtns.forEach(button => {
+      button.addEventListener('click', () => {
+          popup.classList.remove('hidden');
+      });
+  });
+
+  closePopupBtn.addEventListener('click', () => {
+      popup.classList.add('hidden');
+  });
+</script> -->
+
+<script>
+  // Get all openPopup buttons
+  const openPopupBtns = document.querySelectorAll('.open-popup');
+  const closePopupBtn = document.getElementById('closePopup');
+  const popup = document.getElementById('popup');
+
+  // Open popup for any clicked button
+  openPopupBtns.forEach(button => {
+      button.addEventListener('click', () => {
+          popup.classList.remove('hidden');
+      });
+  });
+
+  // Close popup
+  closePopupBtn.addEventListener('click', () => {
+      popup.classList.add('hidden');
+  });
+</script>
 </body>
 
 </html>
